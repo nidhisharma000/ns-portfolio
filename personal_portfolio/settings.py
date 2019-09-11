@@ -8,7 +8,10 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+<<<<<<< HEAD
 import django_heroku
+=======
+>>>>>>> 1a7c4d70d4acf1811fe5ed446edba9095853b750
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +26,11 @@ SECRET_KEY = "!^_6%0so9$a@u-w22nc56xcp0^spoo4k^3q!j016o5hll+#c#o"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'https://gettstarted.herokuapp.com/']
+=======
+ALLOWED_HOSTS = []
+>>>>>>> 1a7c4d70d4acf1811fe5ed446edba9095853b750
 
 
 # Application definition
@@ -40,7 +47,10 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+<<<<<<< HEAD
     "whitenoise.middleware.WhiteNoiseMiddleware",
+=======
+>>>>>>> 1a7c4d70d4acf1811fe5ed446edba9095853b750
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -122,6 +132,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+<<<<<<< HEAD
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
@@ -131,3 +142,10 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #Activate Django heroku
 django_heroku.settings(locals())
+=======
+STATIC_URL = "/static/"
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+                     )
+>>>>>>> 1a7c4d70d4acf1811fe5ed446edba9095853b750

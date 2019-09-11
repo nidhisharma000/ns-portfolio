@@ -37,7 +37,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="C:\ns-portfolio\venv"
+=======
+VIRTUAL_ENV="C:\Program Files\Python37\ns-portfolio\venv"
+>>>>>>> 1a7c4d70d4acf1811fe5ed446edba9095853b750
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

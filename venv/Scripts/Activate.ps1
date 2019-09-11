@@ -27,7 +27,11 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
+<<<<<<< HEAD
 $env:VIRTUAL_ENV="C:\ns-portfolio\venv"
+=======
+$env:VIRTUAL_ENV="C:\Program Files\Python37\rp-portfolio\venv"
+>>>>>>> 1a7c4d70d4acf1811fe5ed446edba9095853b750
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
