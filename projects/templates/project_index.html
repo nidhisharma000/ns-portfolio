@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
+
 <h1>Projects</h1>
+<h2></h2>
 <div class="row">
 {% for project in projects %}
     <div class="col-md-4">
@@ -19,4 +21,6 @@
     </div>
     {% endfor %}
 </div>
+<a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Contact Me!</a>
+<a href="#intro" class="btn btn-xl btn-dark js-scroll-trigger">More>></a>
 {% endblock %}
